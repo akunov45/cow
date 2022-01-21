@@ -78,13 +78,12 @@ const Header = () => {
                                 />
                             </a>
                         </button>
-                        <button>
+                        <button onClick={() => changeBodyBg()}>
                             <a href='#!'>
                                 <img
                                     className='twitter-hower'
                                     width='22px'
                                     height='22px'
-                                    onClick={() => changeBodyBg()}
                                     src={sun}
                                     alt=''
                                 />
