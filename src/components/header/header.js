@@ -21,6 +21,7 @@ const Header = () => {
                         <li>
                             <a href='#!'>
                                 <img
+                                    className='logo'
                                     width='190px'
                                     height='48px'
                                     src={cowLogoDark}

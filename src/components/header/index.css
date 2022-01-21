@@ -49,6 +49,11 @@ a {
     font-weight: 500;
 }
 
+.logo:hover {
+    transform: rotate(-10deg);
+    transition: 0.3s;
+}
+
 .twitter-btn a:hover {
     cursor: url('../../images/cow-swap/cursor1.gif'), auto;
     animation: 1s ease 0s infinite normal none running cursor;
