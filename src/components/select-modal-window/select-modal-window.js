@@ -1,18 +1,25 @@
 import React from 'react';
-import './select-modal-window.css'
+import './select-modal-window.css';
 
-const SelectModalWindow = ({active, setActive}) => {
+const SelectModalWindow = ({ active, setActive }) => {
     return (
-        <div className={active ? 'modal active' : 'modal'} onClick={() => setActive(false)}>
-            <div className={active ? 'modal__content' : 'modal__content'} onClick={e => e.stopPropagation()}>
-                <div className="header">
+        <div
+            className={active ? 'modal active' : 'modal'}
+            onClick={() => setActive(false)}>
+            <div
+                className={active ? 'modal__content' : 'modal__content'}
+                onClick={(e) => e.stopPropagation()}>
+                <div className='header'>
                     <h1>Select a token</h1>
-                    <img src="" alt=""/>
+                    <img src='' alt='' />
                 </div>
-                <div className="select-input">
-                    <input type="text" placeholder="Search name or paste address"/>
+                <div className='select-input'>
+                    <input
+                        type='text'
+                        placeholder='Search name or paste address'
+                    />
                 </div>
-                <div className="common-tokens">
+                <div className='common-tokens'>
                     <h1>Common tokens</h1>
                     <button>DAI</button>
                     <button>USDC</button>
@@ -20,14 +27,9 @@ const SelectModalWindow = ({active, setActive}) => {
                     <button>WBTC</button>
                     <button>WETH</button>
                 </div>
-                <div className="all-wallet">
-
-                </div>
-                <div className="link">
-                    <a href="">
-
-                        Manage Token Lists
-                    </a>
+                <div className='all-wallet'></div>
+                <div className='link'>
+                    <a href='#!'>Manage Token Lists</a>
                 </div>
             </div>
         </div>
