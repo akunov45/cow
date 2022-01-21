@@ -2,6 +2,7 @@ import React from 'react';
 import etherLogo from '../../images/cow-swap/ethereum-logo.png';
 import arrowDown from '../../images/svg/arrow-down-icon.svg';
 import cowLogoDark from '../../images/svg/cow-logo-dark.svg';
+import cowLogoNight from '../../images/svg/cow-logo.svg';
 import menuMore from '../../images/svg/menu.svg';
 import sun from '../../images/svg/sun.svg';
 import twitter from '../../images/svg/twitter.svg';
@@ -11,6 +12,12 @@ import './index.css';
 const Header = () => {
     const changeBodyBg = () => {
         let wrap = document.getElementsByClassName('wrapper')[0];
+        let logo = document.getElementsByClassName('logo')[0];
+        if (wrap.className === 'wrapper bg2') {
+            logo.src = cowLogoDark;
+        } else {
+            logo.src = cowLogoNight;
+        }
         wrap.classList.toggle('bg2');
     };
     return (
