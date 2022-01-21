@@ -1,14 +1,14 @@
 import React from 'react';
-import './main-content.css';
 import arrowDown from '../../images/svg/arrow-down-grey.svg';
 import setting from '../../images/svg/setting.svg';
+import './main-content.css';
 
-const MainContent = ({ setActive }) => {
-    const setActive2 = () => {
+const MainContent = ({ setActive, setActive2 }) => {
+    const SelectModal = () => {
         setActive(true);
     };
-    const setActive3 = () => {
-        setActive(true);
+    const ConnectModal = () => {
+        setActive2(true);
     };
     return (
         <div className='content'>
@@ -21,7 +21,7 @@ const MainContent = ({ setActive }) => {
                     </div>
                 </div>
                 <div className='crypto'>
-                    <select onClick={() => setActive2()}>
+                    <select onClick={() => SelectModal()}>
                         <img src='' alt='' />
                         <option value=''>WETH</option>
                     </select>
@@ -38,7 +38,7 @@ const MainContent = ({ setActive }) => {
                     </b>
                 </div>
                 <div className='select'>
-                    <select onClick={() => setActive2()}>
+                    <select onClick={() => SelectModal()}>
                         <option value=''>Select a token</option>
                         <img src='' alt='' />
                     </select>
@@ -49,7 +49,7 @@ const MainContent = ({ setActive }) => {
                     />
                 </div>
                 <div className='connect'>
-                    <button onClick={setActive3}>Connect Wallet</button>
+                    <button onClick={ConnectModal}>Connect Wallet</button>
                 </div>
             </div>
         </div>

@@ -1,5 +1,109 @@
+.Modal {
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.Modal.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.ConnectModal__content {
+    padding: 20px;
+    border-radius: 50px;
+    background-color: lightblue;
+    width: 900px;
+    height: 1100px;
+    transform: scale(0.5);
+    transition: 0.4s all;
+}
+
+.ConnectModal__content.active {
+    transform: scale(1);
+}
 .header .wall {
     font-size: 35px;
     font-family: Monserrat, sans-serif;
     font-weight: 500;
+    padding: 15px;
+}
+
+.description {
+    width: 820px;
+    height: 160px;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.description p {
+    font-size: 30px;
+    font-family: 'Inter var', sans-serif;
+    font-weight: 500;
+}
+
+.description p a {
+    font-size: 30px;
+    font-family: 'Inter var', sans-serif;
+    font-weight: 500;
+    color: darkorange;
+}
+.description p a:hover {
+    border-bottom: 2px solid darkorange;
+}
+
+.metamask button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 820px;
+    height: 130px;
+    border: none;
+    border-radius: 20px;
+    background-color: skyblue;
+    margin: 20px;
+    padding: 20px;
+    font-size: 35px;
+    font-family: 'Inter var', sans-serif;
+    cursor: pointer;
+}
+.metamask b {
+    font-weight: 500;
+}
+.metamask button:first-child:hover {
+    border: 2px solid darkorange;
+}
+button b:hover {
+    border-bottom: 2px solid darkorange;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    transform: translate(0, 350px);
+}
+.footer h5 {
+    font-size: 30px;
+    font-weight: 500;
+}
+.footer a {
+    font-size: 30px;
+    color: darkorange;
+}
+.footer a:hover {
+    border-bottom: 2px solid darkorange;
 }

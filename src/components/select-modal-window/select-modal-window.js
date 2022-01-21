@@ -2,6 +2,7 @@ import React from 'react';
 import './select-modal-window.css';
 import exit from '../../images/svg/x.svg';
 import question from '../../images/svg/question.svg';
+import paper from '../../images/svg/paper.svg';
 
 const SelectModalWindow = ({ active, setActive }) => {
     const exitModal = () => {
@@ -50,7 +51,10 @@ const SelectModalWindow = ({ active, setActive }) => {
                 </div>
                 <div className='all-wallet'></div>
                 <div className='link'>
-                    <a href='#!'>Manage Token Lists</a>
+                    <a href='#!'>
+                        <img width='40px' height='40px' src={paper} alt='' />
+                        Manage Token Lists
+                    </a>
                 </div>
             </div>
         </div>
