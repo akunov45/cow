@@ -25,7 +25,15 @@ const MainContent = ({ setActive, setActive2 }) => {
                         <img src='' alt='' />
                         <option value=''>WETH</option>
                     </select>
-                    <input type='text' placeholder='0.0' />
+                    <input
+                        type='number'
+                        placeholder='0.0'
+                        inputMode='decimal'
+                        autoComplete='off'
+                        pattern='^[0-9]*[.,]?[0-9]*$'
+                        minlength='1'
+                        maxLength='79'
+                    />
                 </div>
                 <div className='down'>
                     <b>
@@ -44,8 +52,13 @@ const MainContent = ({ setActive, setActive2 }) => {
                     </select>
                     <input
                         className='second-input'
-                        type='text'
+                        inputMode='decimal'
+                        autoComplete='off'
+                        pattern='^[0-9]*[.,]?[0-9]*$'
+                        type='number'
                         placeholder='0.0'
+                        minlength='1'
+                        maxLength='79'
                     />
                 </div>
                 <div className='connect'>

@@ -5,6 +5,7 @@ import cowLogoDark from '../../images/svg/cow-logo-dark.svg';
 import cowLogoNight from '../../images/svg/cow-logo.svg';
 import menuMore from '../../images/svg/menu.svg';
 import sun from '../../images/svg/sun.svg';
+import moonIcon from '../../images/svg/moon.svg';
 import twitter from '../../images/svg/twitter.svg';
 import Footer from '../footer/footer';
 import './index.css';
@@ -15,11 +16,14 @@ const Header = ({ setActive2 }) => {
         let logo = document.getElementsByClassName('logo')[0];
         let swap = document.getElementsByClassName('swap')[0];
         let profile = document.getElementsByClassName('profile')[0];
+        let moon = document.getElementsByClassName('twitter-hower')[0];
         if (wrap.className === 'wrapper bg2') {
             logo.src = cowLogoDark;
             swap.style.color = '#000';
             profile.style.color = '#000';
+            moon.src = sun;
         } else {
+            moon.src = moonIcon;
             logo.src = cowLogoNight;
             swap.style.color = '#fff';
             profile.style.color = '#fff';
