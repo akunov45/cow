@@ -31,7 +31,6 @@ a {
 }
 
 .btn-bitcoin {
-    -webkit-box-align: center;
     align-items: center;
     width: 135px;
     height: 38px;
@@ -42,6 +41,14 @@ a {
     cursor: pointer;
     display: flex;
     font-weight: 500;
-    -webkit-box-pack: justify;
     justify-content: space-between;
+}
+.btn-bitcoi p {
+    text-align: center;
+}
+
+.twitter-btn a:hover {
+    cursor: ul('../../images/cow-swap/cursor1.gif');
+    background-color: red;
+    animation: 1s ease 0s infinite normal none running cursor;
 }

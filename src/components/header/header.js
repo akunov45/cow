@@ -1,7 +1,8 @@
 import React from 'react';
+import etherLogo from '../../images/cow-swap/ethereum-logo.png';
 import cowswapdark from '../../images/svg/cow-logo-dark.svg';
-import feedback from '../../images/cow-swap/feedback.svg';
-import twitter from '../../images/cow-swap/twitter.svg';
+import feedback from '../../images/svg/feedback.svg';
+import twitter from '../../images/svg/twitter.svg';
 import menuMore from '../../images/svg/menu.svg';
 import './index.css';
 
@@ -36,7 +37,12 @@ const Header = () => {
                 <div className='btn-bitcoin'>
                     <div>
                         <div>
-                            <img src='' alt='' />
+                            <img
+                                width='20px'
+                                height='20px'
+                                src={etherLogo}
+                                alt=''
+                            />
                             <p>Ethereum</p>
                             <img src='' alt='' />
                         </div>
@@ -52,7 +58,7 @@ const Header = () => {
                     </div>
                 </div>
                 <div>
-                    <button>
+                    <button className='twitter-btn'>
                         <a href='#!'>
                             <img
                                 width='28px'
