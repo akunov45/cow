@@ -3,6 +3,8 @@ import gitLogo from '../../images/cow-swap/github-logo.png';
 import ethterscen from '../../images/svg/etherscan-logo.svg';
 import './footer.css';
 
+import feedback from '../../images/svg/feedback.svg';
+
 let strong = [
     {
         txtbold: 'Web',
@@ -63,6 +65,11 @@ const Footer = () => {
                         })}
                     </div>
                 </div>
+            </div>
+            <div className='right-contents'>
+                <button>
+                    <img src={feedback} alt='' />
+                </button>
             </div>
         </div>
     );

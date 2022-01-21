@@ -5,7 +5,7 @@ import { useState } from 'react';
 import SelectModalWindow from './components/select-modal-window/select-modal-window';
 
 function App() {
-    const [modalActive, setModalActive] = useState(true);
+    const [modalActive, setModalActive] = useState(false);
 
     return (
         <div className='wrapper'>
