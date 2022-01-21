@@ -1,7 +1,7 @@
 .modal {
     height: 100vh;
     width: 100%;
-    background-color: rgba(0,0,0,0.4);
+    background-color: rgba(0, 0, 0, 0.4);
     position: fixed;
     top: 0;
     left: 0;
@@ -71,23 +71,23 @@
     margin-left: -15px;
 }
 
-.modal__content .link {
+.modal__content .link a {
     font-size: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 50px;
-}
-
-.modal__content .link a {
     text-decoration: none;
     color: black;
     font-family: Monserrat, sans-serif;
 }
 
-
-.modal__content .link a:hover{
+.modal__content .link a:hover {
     color: grey;
     opacity: 0.8;
 }
 
+.question {
+    margin-left: 15px;
+    margin-bottom: -5px;
+}

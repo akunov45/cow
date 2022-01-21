@@ -3,7 +3,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-
 .content {
     display: flex;
     align-items: center;
@@ -12,20 +11,20 @@
 .main_content {
     top: 0;
     left: 0;
-    transform: translate(0, 20%);
+    transform: translate(0, 39%);
     width: 460px;
     height: 350px;
     background: lightblue;
-    border: 3px solid black;
     border-radius: 20px;
-    box-shadow: 10px 10px 8px 0 black;
+    border: 3px solid rgb(0, 0, 0);
+    box-shadow: rgb(0 0 0) 4px 4px 0px;
 }
 
 .main_content .header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 15px;
+    padding: 5px 20px;
 }
 
 .header h4 {
@@ -39,15 +38,26 @@
     font-family: Monserrat, sans-serif;
     font-weight: 500;
 }
+.header .setting img:hover {
+    transform: rotate(180deg);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.setting img {
+    margin-left: 5px;
+    margin-bottom: -6px;
+}
 
 .main_content .crypto {
-    width: 410px;
+    width: 430px;
     height: 90px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-left: 20px;
-    padding: 20px;
+    margin-top: -20px;
+    margin-left: 13px;
+    padding: 5px;
     background: white;
     border: 2px solid skyblue;
     border-radius: 20px;
@@ -64,9 +74,13 @@
     outline-width: 0;
 }
 
+.main_content .second-input {
+    margin-right: -15px;
+}
+
 .crypto select {
     width: 130px;
-    height: 30px;
+    height: 40px;
     border: none;
     border-radius: 20px;
     background: lightblue;
@@ -74,16 +88,20 @@
     padding: 5px;
     font-size: 16px;
     font-weight: 600;
+    cursor: pointer;
+}
+.crypto select:hover {
+    background-color: darkorange;
 }
 
 .main_content .select {
-    width: 410px;
+    width: 430px;
     height: 90px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 10px;
-    margin-left: 20px;
+    margin-top: 5px;
+    margin-left: 13px;
     padding: 20px;
     background: white;
     border: 2px solid skyblue;
@@ -92,7 +110,7 @@
 
 .select select {
     width: 170px;
-    height: 35px;
+    height: 45px;
     border: none;
     border-radius: 20px;
     background: lightsalmon;
@@ -100,6 +118,8 @@
     padding: 5px;
     font-size: 16px;
     font-weight: 600;
+    margin-left: -15px;
+    cursor: pointer;
 }
 
 .main_content p {
@@ -108,29 +128,43 @@
 }
 
 .connect button {
-    width: 410px;
+    width: 430px;
     height: 55px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 10px;
-    margin-left: 20px;
+    margin-top: 25px;
+    margin-left: 13px;
     padding: 20px;
     background: lightsalmon;
-    border: 3px solid black;
     border-radius: 20px;
     font-size: 18px;
     font-weight: 600;
-    box-shadow: 6px 6px 4px 0 black;
+    border: 3px solid rgb(0, 0, 0);
+    box-shadow: rgb(0 0 0) 4px 4px 0px;
+}
+.connect button:hover {
+    box-shadow: none;
+    transform: scale(0.9);
+    transition: 0.3s;
+}
+
+.connect button:hover {
+    box-shadow: none;
+    transform: translate(5px, 5px);
+    transition: 0.3s;
+    cursor: url('../../images/cow-swap/cursor1.gif'), auto;
+    animation: 1s ease 0s infinite normal none running cursor;
 }
 
 .down b {
     position: absolute;
     background: white;
     border: 2px solid skyblue;
-    border-radius: 6px;
-    padding: 8px;
+    border-radius: 12px;
+    padding: 4px 2px 4px 2px;
     top: 0;
     left: 0;
-    transform: translate(215px, 155px);
+    transform: translate(215px, 135px);
+    cursor: pointer;
 }

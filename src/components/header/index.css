@@ -22,6 +22,7 @@ a {
     font-family: sans-serif;
     font-weight: 500;
 }
+
 .header-btn-group {
     display: flex;
     flex-direction: row;
@@ -31,7 +32,7 @@ a {
 .btn-bitcoin .ether {
     display: flex;
     -webkit-box-align: center;
-    padding: 8px 8px;
+    padding: 8px 4px;
     justify-content: space-between;
     align-items: center;
 }
@@ -49,8 +50,7 @@ a {
 }
 
 .twitter-btn a:hover {
-    cursor: url('../../images/cow-swap/cursor1.gif');
-    background-color: red;
+    cursor: url('../../images/cow-swap/cursor1.gif'), auto;
     animation: 1s ease 0s infinite normal none running cursor;
 }
 .connect-btn-wrap {
@@ -77,9 +77,31 @@ a {
     background-color: rgb(213, 232, 240);
 }
 
-.twitter-hover:hover {
+.btns-end button:hover {
+    background-color: #fff;
+}
+
+.twitter-btn:hover {
     cursor: url('../../images/cow-swap/cursor1.gif');
     animation: 1s ease 0s infinite normal none running cursor;
+}
+@keyframes cursor {
+    0% {
+        cursor: url('../../images/cow-swap/cursor1.gif'), auto;
+    }
+    25% {
+        cursor: url(../../images/cow-swap/cursor2.gif), auto;
+    }
+    50% {
+        cursor: url(../../images/cow-swap/cursor3.gif), auto;
+    }
+    75% {
+        cursor: url(../../images/cow-swap/cursor4.gif), auto;
+    }
+}
+
+.twitter-btn img > svg {
+    background-color: #000;
 }
 
 .more {
@@ -88,6 +110,9 @@ a {
     border: none;
     border-radius: 12px;
     background-color: rgb(213, 232, 240);
+}
+.more:hover {
+    background-color: #fff;
 }
 .wrap-footer {
     position: absolute;

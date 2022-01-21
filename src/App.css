@@ -12,6 +12,12 @@
         linear-gradient(rgb(164, 211, 227) 5%, rgb(255, 255, 255) 40%);
     height: 100vh;
 }
+.bg2 {
+    background: url(./images/svg/bg-dark-nigth.svg) center / cover no-repeat
+            fixed,
+        linear-gradient(rgb(20, 45, 78) 10%, rgb(22, 58, 100) 30%);
+    height: 100vh;
+}
 .container {
     width: 1313px;
     margin: 0 auto;

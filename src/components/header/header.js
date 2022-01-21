@@ -9,6 +9,10 @@ import Footer from '../footer/footer';
 import './index.css';
 
 const Header = () => {
+    const changeBodyBg = () => {
+        let wrap = document.getElementsByClassName('wrapper')[0];
+        wrap.classList.toggle('bg2');
+    };
     return (
         <>
             <div className='header'>
@@ -64,8 +68,8 @@ const Header = () => {
                         </div>
                     </div>
                     <div className='btns-end'>
-                        <button>
-                            <a href='#!' className='twitter-btn'>
+                        <button className='twitter-btn'>
+                            <a href='https://twitter.com/mevprotection'>
                                 <img
                                     width='22px'
                                     height='22px'
@@ -80,6 +84,7 @@ const Header = () => {
                                     className='twitter-hower'
                                     width='22px'
                                     height='22px'
+                                    onClick={() => changeBodyBg()}
                                     src={sun}
                                     alt=''
                                 />
