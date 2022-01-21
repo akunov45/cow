@@ -13,10 +13,16 @@ const Header = ({ setActive2 }) => {
     const changeBodyBg = () => {
         let wrap = document.getElementsByClassName('wrapper')[0];
         let logo = document.getElementsByClassName('logo')[0];
+        let swap = document.getElementsByClassName('swap')[0];
+        let profile = document.getElementsByClassName('profile')[0];
         if (wrap.className === 'wrapper bg2') {
             logo.src = cowLogoDark;
+            swap.style.color = '#000';
+            profile.style.color = '#000';
         } else {
             logo.src = cowLogoNight;
+            swap.style.color = '#fff';
+            profile.style.color = '#fff';
         }
         wrap.classList.toggle('bg2');
     };
@@ -42,11 +48,11 @@ const Header = ({ setActive2 }) => {
                         </li>
                         <li>
                             <a href='#!'>
-                                <b>Swap</b>
+                                <b className='swap'>Swap</b>
                             </a>
                         </li>
                         <li>
-                            <a href='#!'>
+                            <a href='#!' className='profile'>
                                 <b>Profile</b>
                             </a>
                         </li>
