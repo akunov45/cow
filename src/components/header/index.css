@@ -77,13 +77,15 @@ a {
     background-color: rgb(213, 232, 240);
 }
 
-.twitter-hover {
+.twitter-hover:hover {
     cursor: url('../../images/cow-swap/cursor1.gif');
+    animation: 1s ease 0s infinite normal none running cursor;
 }
 
 .more {
-    height: 28px;
-    width: 38px;
+    height: 38px;
+    width: 45px;
+    border: none;
     border-radius: 12px;
     background-color: rgb(213, 232, 240);
 }

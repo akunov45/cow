@@ -5,6 +5,7 @@ import feedback from '../../images/svg/feedback.svg';
 import twitter from '../../images/svg/twitter.svg';
 import menuMore from '../../images/svg/menu.svg';
 import arrowDown from '../../images/svg/arrow-down-icon.svg';
+import sun from '../../images/svg/sun.svg';
 import './index.css';
 import Footer from '../footer/footer';
 
@@ -80,17 +81,17 @@ const Header = () => {
                                     className='twitter-hower'
                                     width='22px'
                                     height='22px'
-                                    src={twitter}
+                                    src={sun}
                                     alt=''
                                 />
                             </a>
                         </button>
                     </div>
                     <div>
-                        <button>
+                        <button className='more'>
                             <a href='#!'>
                                 <img
-                                    className='more'
+                                    // className='more'
                                     width='22px'
                                     height='22px'
                                     src={menuMore}
