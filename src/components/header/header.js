@@ -9,7 +9,7 @@ import twitter from '../../images/svg/twitter.svg';
 import Footer from '../footer/footer';
 import './index.css';
 
-const Header = () => {
+const Header = ({ setActive2 }) => {
     const changeBodyBg = () => {
         let wrap = document.getElementsByClassName('wrapper')[0];
         let logo = document.getElementsByClassName('logo')[0];
@@ -20,6 +20,10 @@ const Header = () => {
         }
         wrap.classList.toggle('bg2');
     };
+    const showConnectModal = () => {
+        setActive2(true);
+    };
+
     return (
         <>
             <div className='header'>
@@ -71,7 +75,11 @@ const Header = () => {
                     <div>
                         <div>
                             <div className='connect-btn-wrap'>
-                                <p className='connect-btn'>Connect to wallet</p>
+                                <p
+                                    onClick={() => showConnectModal()}
+                                    className='connect-btn'>
+                                    Connect to wallet
+                                </p>
                             </div>
                         </div>
                     </div>

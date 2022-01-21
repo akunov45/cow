@@ -12,7 +12,7 @@ function App() {
     return (
         <div className='wrapper'>
             <div className='container'>
-                <Header />
+                <Header setActive2={setModalActive2} />
                 <MainContent
                     setActive={setModalActive}
                     setActive2={setModalActive2}
