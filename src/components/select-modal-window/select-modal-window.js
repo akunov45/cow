@@ -50,7 +50,7 @@ const SelectModalWindow = ({ active, setActive }) => {
                 </div>
                 <div className='all-wallet'></div>
                 <div className='link'>
-                    <a href=''>Manage Token Lists</a>
+                    <a href='#!'>Manage Token Lists</a>
                 </div>
             </div>
         </div>
