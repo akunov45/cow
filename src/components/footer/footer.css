@@ -1,0 +1,24 @@
+.footer-content img {
+    height: 16px;
+    width: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-contents {
+    /* background-color: #f00; */
+}
+.footer-content {
+    width: 250px;
+    margin-left: 30px;
+    color: rgb(55, 108, 87);
+    opacity: 0.5;
+}
+.footer-content:hover {
+    opacity: 1;
+}

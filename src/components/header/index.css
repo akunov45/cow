@@ -27,28 +27,67 @@ a {
     flex-direction: row;
     -webkit-box-align: center;
     align-items: center;
-    justify-self: flex-end;
 }
-
-.btn-bitcoin {
+.btn-bitcoin .ether {
+    display: flex;
+    -webkit-box-align: center;
+    padding: 8px 8px;
+    justify-content: space-between;
     align-items: center;
+}
+.btn-bitcoin {
     width: 135px;
+    margin: 12px;
+    background-color: red;
     height: 38px;
     background-color: rgb(255, 255, 255);
     border: 1px solid rgb(255, 255, 255);
     border-radius: 12px;
     color: rgb(0, 0, 0);
     cursor: pointer;
-    display: flex;
     font-weight: 500;
-    justify-content: space-between;
-}
-.btn-bitcoi p {
-    text-align: center;
 }
 
 .twitter-btn a:hover {
-    cursor: ul('../../images/cow-swap/cursor1.gif');
+    cursor: url('../../images/cow-swap/cursor1.gif');
     background-color: red;
     animation: 1s ease 0s infinite normal none running cursor;
+}
+.connect-btn-wrap {
+    height: 38px;
+    min-width: 180px;
+    border-radius: 12px;
+    font-weight: 500;
+    background-color: rgb(255, 120, 74);
+    border: 1px solid rgb(255, 120, 74);
+}
+.connect-btn {
+    color: rgb(0, 0, 0);
+    line-height: 38px;
+    display: flex;
+    justify-content: center;
+}
+
+.btns-end button {
+    height: 38px;
+    border: none;
+    width: 45px;
+    border-radius: 12px;
+    margin: 6px;
+    background-color: rgb(213, 232, 240);
+}
+
+.twitter-hover {
+    cursor: url('../../images/cow-swap/cursor1.gif');
+}
+
+.more {
+    height: 28px;
+    width: 38px;
+    border-radius: 12px;
+    background-color: rgb(213, 232, 240);
+}
+.wrap-footer {
+    position: absolute;
+    bottom: 20px;
 }
