@@ -1,13 +1,12 @@
 import React from 'react';
 import etherLogo from '../../images/cow-swap/ethereum-logo.png';
-import cowLogoDark from '../../images/svg/cow-logo-dark.svg';
-import feedback from '../../images/svg/feedback.svg';
-import twitter from '../../images/svg/twitter.svg';
-import menuMore from '../../images/svg/menu.svg';
 import arrowDown from '../../images/svg/arrow-down-icon.svg';
+import cowLogoDark from '../../images/svg/cow-logo-dark.svg';
+import menuMore from '../../images/svg/menu.svg';
 import sun from '../../images/svg/sun.svg';
-import './index.css';
+import twitter from '../../images/svg/twitter.svg';
 import Footer from '../footer/footer';
+import './index.css';
 
 const Header = () => {
     return (
