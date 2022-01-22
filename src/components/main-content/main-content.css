@@ -77,7 +77,14 @@
 .main_content .second-input {
     margin-right: -15px;
 }
-
+.crypto .inp-span {
+    display: flex;
+    flex-direction: column;
+}
+.inp-span span {
+    text-align: end;
+    display: none;
+}
 .crypto select {
     width: 130px;
     height: 40px;
@@ -120,11 +127,6 @@
     font-weight: 600;
     margin-left: -15px;
     cursor: pointer;
-}
-
-.main_content p {
-    font-size: 25px;
-    color: grey;
 }
 
 .connect button {
@@ -176,9 +178,13 @@
 
 input[type='number']::-webkit-input-placeholder {
     color: #000;
+    font-family: 'Inter var', sans-serif;
+    font-family: Inter, sans-serif;
 }
 input[type='number']::-moz-placeholder {
     color: #000;
+    font-family: 'Inter var', sans-serif;
+    font-family: Inter, sans-serif;
 }
 input[type='number'] {
     -moz-appearance: textfield;

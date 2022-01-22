@@ -1,0 +1,115 @@
+.global-div {
+    width: 380px;
+    height: 550px;
+    border-radius: 20%;
+
+    display: block;
+    position: fixed;
+    bottom: -15px;
+    right: 20px;
+    z-index: 10;
+}
+
+.wrappfback {
+    width: 420px;
+    height: 580px;
+    /*background-color: green;*/
+    display: none;
+    position: fixed;
+    bottom: 14px;
+    right: 0;
+}
+
+.close img {
+    align-items: flex-end;
+    background: #5c6b7f;
+    border-radius: 50%;
+    right: 0;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+
+.first-content {
+    background-color: rgb(255, 120, 74);
+    color: rgb(255, 255, 255);
+    height: 185px;
+    box-sizing: border-box;
+    border-radius: 15px 15px 0 0;
+    text-align: center;
+}
+
+.first-content img {
+    box-sizing: border-box;
+    display: inline-flex;
+    height: 65px;
+    width: 70px;
+    margin: 25px;
+}
+
+.txtmodal {
+    font-weight: 300;
+    margin-top: -15px;
+}
+
+.txtmodal h3 {
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.first-content a {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    font-weight: 400;
+}
+
+.second-content {
+    background-color: rgb(253, 253, 253);
+    box-sizing: border-box;
+    border-radius: 0 0 15px 15px;
+    height: 300px;
+}
+
+.second-content h3 {
+    text-align: center;
+    color: rgb(77, 77, 77);
+    font-size: 14px;
+    font-family: Roboto;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    padding-top: 50px;
+}
+
+.fbmodaltxt div {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin: 20px 40px;
+}
+
+.fbmodaltxt div:hover {
+    cursor: pointer;
+    background: #ac6161;
+}
+
+.fbmodaltxt p {
+    color: rgb(77, 77, 77);
+    font-size: 16px;
+    font-family: Roboto;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+}
+
+.close {
+    display: none;
+    position: fixed;
+    top: 140px;
+    right: 25px;
+}
+
+.close.closeMod {
+    display: block;
+    top: 120px;
+    transition: 0.3s;
+}

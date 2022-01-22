@@ -9,6 +9,7 @@ import moonIcon from '../../images/svg/moon.svg';
 import twitter from '../../images/svg/twitter.svg';
 import Footer from '../footer/footer';
 import './index.css';
+import ModalHeader from './headermodal';
 
 const Header = ({ setActive2 }) => {
     const changeBodyBg = () => {
@@ -32,6 +33,11 @@ const Header = ({ setActive2 }) => {
     };
     const showConnectModal = () => {
         setActive2(true);
+    };
+
+    const showModal = () => {
+        let miniModal = document.querySelector('.m-show');
+        miniModal.style.display = 'block';
     };
 
     return (
@@ -63,12 +69,12 @@ const Header = ({ setActive2 }) => {
                     </ul>
                 </div>
                 <div className='header-btn-group'>
-                    <div className='btn-bitcoin'>
+                    <div className='btn-bitcoin' onClick={() => showModal()}>
                         <div>
                             <div className='ether'>
                                 <img
                                     width='20px'
-                                    height='20px'
+                                    height='16px'
                                     src={etherLogo}
                                     alt=''
                                 />
@@ -88,7 +94,7 @@ const Header = ({ setActive2 }) => {
                                 <p
                                     onClick={() => showConnectModal()}
                                     className='connect-btn'>
-                                    Connect to wallet
+                                    Connect to a wallet
                                 </p>
                             </div>
                         </div>
@@ -120,7 +126,6 @@ const Header = ({ setActive2 }) => {
                         <button className='more'>
                             <a href='#!'>
                                 <img
-                                    // className='more'
                                     width='22px'
                                     height='22px'
                                     src={menuMore}
@@ -130,6 +135,9 @@ const Header = ({ setActive2 }) => {
                         </button>
                     </div>
                 </div>
+            </div>
+            <div className='m-show'>
+                <ModalHeader setActive2={setActive2} />
             </div>
             <div className='wrap-footer'>
                 <Footer />

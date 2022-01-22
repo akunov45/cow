@@ -1,0 +1,38 @@
+.modal-header {
+    align-items: flex-start;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: rgb(213, 233, 240);
+    box-shadow: rgb(0 0 0 / 1%) 0px 0px 1px, rgb(0 0 0 / 4%) 0px 4px 8px,
+        rgb(0 0 0 / 4%) 0px 16px 24px, rgb(0 0 0 / 1%) 0px 24px 32px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    overflow: auto;
+    padding: 0.4rem;
+    position: absolute;
+    justify-content: space-between;
+    top: 70px;
+    right: 300px;
+    min-width: 180px;
+    z-index: 99;
+}
+
+.dot {
+    background: #a7a7a7;
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+}
+
+.modal-h-content {
+    display: flex;
+    cursor: pointer;
+    justify-content: space-around;
+}
+.modal-h-content * {
+    margin: 8px;
+    line-height: 10px;
+
+    text-align: center;
+}

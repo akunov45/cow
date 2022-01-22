@@ -1,13 +1,17 @@
 import React from 'react';
-import './select-modal-window.css';
-import exit from '../../images/svg/x.svg';
-import question from '../../images/svg/question.svg';
 import paper from '../../images/svg/paper.svg';
+import question from '../../images/svg/question.svg';
+import exit from '../../images/svg/x.svg';
+import tokens from '../../tokens/tokens';
+import './select-modal-window.css';
 
 const SelectModalWindow = ({ active, setActive }) => {
+
+    
     const exitModal = () => {
         setActive(false);
     };
+
     return (
         <div
             className={active ? 'modal active' : 'modal'}
@@ -49,7 +53,30 @@ const SelectModalWindow = ({ active, setActive }) => {
                     <button>WBTC</button>
                     <button>WETH</button>
                 </div>
-                <div className='all-wallet'></div>
+                <div className='all-wallet'>
+                    <div className='all-wallet-coin'>
+                        <div>
+                            {tokens.map((coin, key) => (
+                                <>
+                                    <div className='coin-data'>
+                                        <img
+                                            width='78px'
+                                            height='78px'
+                                            src={coin.img}
+                                            alt=''
+                                        />
+                                        <h2 style={{ fontSize: '40px' }}>
+                                            {coin.name}
+                                        </h2>
+                                        <h2 style={{ fontSize: '22px' }}>
+                                            {coin.fullname}
+                                        </h2>
+                                    </div>
+                                </>
+                            ))}
+                        </div>
+                    </div>
+                </div>
                 <div className='link'>
                     <a href='#!'>
                         <img width='40px' height='40px' src={paper} alt='' />

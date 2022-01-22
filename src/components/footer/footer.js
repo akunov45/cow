@@ -4,6 +4,8 @@ import ethterscen from '../../images/svg/etherscan-logo.svg';
 import './footer.css';
 
 import feedback from '../../images/svg/feedback.svg';
+import FeedbackModal from "./modalFeedback/feedbackmodal";
+
 
 let strong = [
     {
@@ -30,6 +32,20 @@ const Footer = () => {
     const style = {
         display: 'flex',
     };
+    const showModal = () => {
+        let minimodal = document.querySelector('.minimodal')
+        minimodal.classList.add('show')
+    }
+    const hightModal = () => {
+        let minimodal = document.querySelector('.minimodal')
+        minimodal.classList.remove('show')
+    }
+
+    const openModal = () => {
+        let modalImportant = document.querySelector('.wrappfback')
+        modalImportant.style.display = 'block'
+    }
+
     return (
         <div>
             <div className='footer-container'>
@@ -67,9 +83,23 @@ const Footer = () => {
                 </div>
             </div>
             <div className='right-contents'>
-                <button>
-                    <img src={feedback} alt='' />
+                <div className='minimodal'><span>Give <br/> Feedback!</span></div>
+                <button onMouseOut={() => {
+                    hightModal()
+                }} onMouseOver={() => {
+                    showModal()
+                }} id='feetback' onClick={()=> {
+                    openModal()
+                }}>
+                    <img src={feedback} alt=''/>
                 </button>
+                <div className='id-content'>
+                    <p>14050741</p>
+                    <div>
+
+                    </div>
+                </div>
+                <FeedbackModal />
             </div>
         </div>
     );

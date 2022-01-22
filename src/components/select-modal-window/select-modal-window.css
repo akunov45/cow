@@ -63,12 +63,11 @@
 }
 
 .modal__content .all-wallet {
-    width: 850px;
+    width: 860px;
     height: 400px;
     background-color: skyblue;
     border: 2px solid grey;
     margin-top: 40px;
-    margin-left: -15px;
 }
 
 .modal__content .link a {
@@ -90,4 +89,23 @@
 .question {
     margin-left: 15px;
     margin-bottom: -5px;
+}
+.all-wallet-coin div {
+    display: grid;
+}
+.all-wallet-coin div * {
+    background-color: #fff;
+    margin: 5px 12px;
+}
+.all-wallet {
+    height: 100%;
+    border: 1x solid #c1c1c1;
+    overflow-y: scroll;
+    background-color: black;
+}
+
+.all-wallet-coin .coin-data {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
 }
