@@ -8,7 +8,6 @@ const MainContent = ({ setActive, setActive2 }) => {
     const [modalActive, setModalActive] = useState(false);
 
     const [coin1, setCoin1] = useState(0);
-    const [coin2, setCoin2] = useState(0);
 
     const SelectModal = () => {
         setModalActive(true);
@@ -26,11 +25,7 @@ const MainContent = ({ setActive, setActive2 }) => {
         span.style.display = 'block';
         setCoin1(e.target.value);
     };
-    const conwertWallet2 = (e) => {
-        let span = document.querySelector('.inp-span span');
-
-        setCoin2(e.target.value);
-    };
+    const conwertWallet2 = (e) => {};
 
     return (
         <>
