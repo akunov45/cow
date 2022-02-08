@@ -99,7 +99,8 @@ const Footer = () => {
 
                     </div>
                 </div>
-                <FeedbackModal />
+                <FeedbackModal
+                />
             </div>
         </div>
     );
